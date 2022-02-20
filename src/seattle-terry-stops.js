@@ -11,6 +11,7 @@ import {
     EuiCard,
     EuiLink,
  } from '@elastic/eui';
+ import Charter from './demo_charts.js';
 
 function learn (link) {
   return (
@@ -97,6 +98,7 @@ function TopicView (){
                                  </EuiFlexItem>
                             ))}
                             </EuiFlexGrid>
+                            <Charter /> 
                       </EuiPageContent>
                       </EuiPageContent>
             </EuiPageBody>
