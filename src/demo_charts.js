@@ -8,12 +8,10 @@ import {
   } from "@elastic/charts";
 
 
-function Charter () {
-return (
+function Charter() {
+  return (
       <Chart size={["100%", 500]}>
-        <Settings showLegend />
-        <Axis id="count" title="count" position={Position.Left} />
-        <Axis id="x" title="goods" position={Position.Bottom} />
+        <Settings showLegend={false}/>
         <BarSeries
           id="bars"
           name="amount"
@@ -28,5 +26,6 @@ return (
           ]}
         />
       </Chart>
-      );
-      };
+      )};
+
+export default Charter;
