@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { EuiProvider } from '@elastic/eui';
+import '@elastic/eui/dist/eui_theme_light.css';
+import Header from './eui-header.js';
+import Topic from './eui-object-template.js';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EuiProvider colorMode='light'>
+      <Header />
+      <Topic />
+    </EuiProvider>
   );
 }
 
